@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Trip-advisor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    
+    <nav class="navbar">
+      <div class="logo">
+        <!-- <i class="fa-solid fa-magnifying-glass-location"></i> -->
+        <h2>Tripadvisor</h2>
+      </div>
+
+      <div class="nav-links">
+        <a href="#agent">AI Agent</a>
+        <a href="#discover">Discover</a>
+        <a href="#reviews">Review</a>
+        <a href="#more">More</a>
+      </div>
+
+      <div class="nav-right">
+        <a href="#more"><i class="fa-solid fa-globe"></i> INR</a>
+        <button>Sign in</button>
+      </div>
+    </nav>
+
+    <!-- Heading -->
+    <div class="heading">
+      <h1>Where to go?</h1>
+
+      <!-- Search Bar -->
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+          type="text"
+          placeholder="Places to go, things to do, hotels..."
+        />
+
+        <button>Search</button>
+      </div>
+    </div>
+
+    <div class="categories">
+      <!-- <p>What's next for you?</p> -->
+    </div>
+
+    <!-- travel Banner -->
+    <div class="banner">
+      <img
+        src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhBG-FIPgK-lHDceA6yl1cMQb-qn43raunfPl2U0cpPw&s=10
+        alt="lake"
+      />
+
+      <div class="banner-content">
+        <h2>Travel the world.<br /></h2>
+
+        <p>
+          Get to know the beauty of the world by travelling across with us.
+          Discover the creation of nature.
+        </p>
+
+        <a href="explore">Explore</a>
+      </div>
+    </div>
+
+    <!-- Destinations -->
+    <div class="destinations">
+      <h2>Search your next travel</h2>
+
+      <p>Whatever you're into, we've got it</p>
+
+      <div class="destination-title">
+        <div class="destination-card">
+          <img
+            src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG-HWkY50zmOMHqbKikndIw_YKFjJUahxsZSfVO28veA&s=10
+            alt="Kashmir"
+          />
+          <h3>Kashmir, India</h3>
+          <p>Snowfall,sky-diving and Adventure</p>
+          <p>4.9 ⭐⭐⭐⭐</p>
+          <p>11,999<del>9,999</del></p>
+        </div>
+
+        <div class="destination-card">
+          <img
+            src=https://ik.imgkit.net/3vlqs5axxjf/external/http://images.ntmllc.com/v4/destination/France/Paris/112102_SCN1_Paris_iStock000019121531_Z3E3B4.jpg?tr=w-1200%2Cfo-auto
+            alt="Bali"
+          />
+          <h3>Paris,France</h3>
+          <p>Tropical escapes and peaceful getaways</p>
+          <p>4.9 ⭐⭐⭐⭐</p>
+          <p>50,999<del>39,999</del></p>
+        </div>
+
+        <div class="destination-card">
+          <img
+            src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTMZpW9jQ86oEehxQFW_UHwlYg-XORgnf9Z5vsISSOXg&s=10
+            alt="Manali"
+          />
+          <h3>swizerland</h3>
+          <p>Mountains, nature and scenic adventures</p>
+          <p>4.9 ⭐⭐⭐⭐</p>
+          <p>10,999<del>9,999</del></p>
+        </div>
+
+        <div class="destination-card">
+          <img
+            src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe0ynpOlUKBwDGJXR1CKt1NjWDdicKMNMWABSrH3Sk3g&s=10
+            alt="Kyoto"
+          />
+          <h3>Rome</h3>
+          <p>Culture, heritage and beautiful streets</p>
+          <p>5 ⭐⭐⭐⭐⭐</p>
+          <p>1,10,999<del>85,000</del></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Things to Do -->
+    <div class="things-to-do">
+      <h2>Iconic places </h2>
+
+      <p>Highlight Spot</p>
+
+      <div class="things-container">
+        <div class="things-card">
+          <img
+            src=data:image/jpeg;base64,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
+            alt="Nature"
+          />
+          <h3>London,United kingdom</h3>
+        </div>
+
+        <div class="things-card">
+          <img
+            src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnCcafAFoajHpji3mbTsyhCa49oMLyJ_vyz7c0971Xkw&s=10
+            alt="Restaurant"
+          />
+          <h3>tokyo,Japan</h3>
+        </div>
+
+        <div class="things-card">
+          <img
+            src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZE27YJxmpOnJ8lzBBTG6CoxQ50Zpm1PRVFoFPz6Dk6A&s=10
+            alt="Travel"
+          />
+          <h3>Melbourne,Australia</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="logo">
+        <!-- <i class="fa-solid fa-magnifying-glass-location"></i> -->
+        <h2>Tripadvisor</h2>
+      </div>
+
+      <div class="footer-one">
+        <a href="#termsofuse">Terms of use</a>
+        <a href="#privacy">Privacy and cookies statement</a>
+        <a href="#contact">Contact us</a>
+        <a href="#howitworks">How the site works</a>
+      </div>
+
+      <p>
+        This is the version of our website addressed to speakers of English in
+        India. If you are a resident of another country or region, please select
+        the appropriate version of Tripadvisor for your country or region in the
+        drop-down menu.
+      </p>
+
+      <p>© 2026 Travel Explorer</p>
+    </div>
+  </body>
+</html>

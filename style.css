@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px ;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo i {
+    color: #00aa6c;
+    font-size: 28px;
+}
+
+.logo h2 {
+    font-size: 25px;
+    font-weight: 800;
+    margin-left: 150px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    border:solid 1px gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.nav-links a {
+   
+    font-size: 20px
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    transition: 2s;
+    background-color: #ccc;
+    text-decoration: underline;
+    border-radius: 50%;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-right button {
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 13px 22px;
+    cursor: pointer;
+    margin-right: 100px;
+}
+
+
+/* heading Section */
+.heading {
+    text-align: center;
+    padding: 35px 8%;
+}
+
+.heading h1 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.categories {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    margin-bottom: 30px;
+}
+
+
+
+/* Search Bar */
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 35px;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.search-box button {
+    background: #00aa6c;
+    border: none;
+    border-radius: 25px;
+    padding: 13px 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Banner */
+.banner {
+    position: relative;
+    margin: 20px 8% 60px;
+    height: 380px;
+}
+
+.banner img {
+    height: 100%;
+    border-radius: 15px;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    max-width: 450px;
+    color: black;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.banner-content h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.banner-content p {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.banner-content a {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 13px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.banner-content{
+   
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom{
+
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
+
+/* Destinations */
+.destinations {
+    padding: 20px 8%;
+}
+
+.destinations h2,.things-to-do h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.destinations p,.things-to-do p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.destination-title {
+    display: flex;
+    gap: 20px;
+}
+
+.destination-card {
+    width: 25%;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.destination-card h3 {
+    margin: 10px 0;
+}
+
+.destination-card p {
+    font-size: 12px;
+}
+
+/* Things to Do */
+.things-to-do {
+    background: #f7f7f7;
+    padding: 50px 8%;
+    
+}
+
+.things-container {
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.things-card {
+    width: 33.33%;
+    background: white;
+    border-radius: 10px;
+   
+}
+
+.things-card img {
+    height: 220px;
+    
+}
+
+.things-card h3 {
+    padding: 15px;
+}
+
+
+/* Footer */
+.footer {
+    background: #f2f2f2;
+    padding: 35px 8%;
+}
+
+.footer-one {
+    display: flex;
+    gap: 25px;
+    margin: 20px 0;
+}
+.logo h2{
+    margin: 0px;
+    font-size: 40px;
+}
+
+.footer-one a {
+    font-size: 30px
+    text-decoration:underline;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.footer p {
+    font-size: 20px
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+/*media queries*/
+
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .heading h1 {
+        font-size: 35px;
+    }
+
+    .categories {
+        gap: 15px;
+    }
+
+    .search-box {
+        gap: 5px;
+    }
+
+    .search-box input {
+        font-size: 11px;
+    }
+
+    .search-box button {
+        padding: 12px 15px;
+    }
+
+    .banner {
+        height: 320px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .banner-content {
+        top: 35px;
+        left: 20px;
+        right: 15px;
+    }
+
+    .banner-content h2 {
+        font-size: 25px;
+    }
+
+    .destination-container, .things-container {
+        flex-direction: column;
+    }
+
+    .destination-card,.things-card {
+        width: 100%;
+    }
+
+    .destination-card img,.things-card img {
+        height: 220px;
+    }
+
+    .footer-one {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
